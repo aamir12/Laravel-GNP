@@ -1,0 +1,18 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "email": [
+            "The Email has already been taken."
+        ],
+        "username": [
+            "The Username has already been taken."
+        ],
+        "first_name": [
+            "The First Name may only contain letters."
+        ],
+        "phone": [
+            "The phone format is invalid."
+        ]
+    }
+}

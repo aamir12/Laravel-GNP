@@ -1,0 +1,31 @@
+{
+    "status": "success",
+    "message": "List lottery found successfully!",
+    "data": [
+        {
+            "id": 7,
+            "name": "Holly Rempel",
+            "description": "Perspiciatis et error ullam voluptatem ratione. Dolorum quis tempora autem ullam quia. Pariatur inventore ea rerum unde.",
+            "image": "test.png",
+            "type": "Fixed",
+            "score_threshold": 100,
+            "period": "daily",
+            "start_date": "2021-09-14 08:25",
+            "end_date": "2021-09-21 08:25",
+            "state": "pending",
+            "is_lottery": 1,
+            "space_count": 0,
+            "entry_fee": "0.00",
+            "terms_url": "https://www.example.com",
+            "auto_enter_user": 1,
+            "image_type": null,
+            "status": "live",
+            "created_at": "2021-09-14 08:25:01",
+            "updated_at": "2021-09-14 08:25:01",
+            "deleted_at": null,
+            "created_by": null,
+            "updated_by": null,
+            "threshold_operator": ">="
+        }
+    ]
+}

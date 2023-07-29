@@ -1,0 +1,28 @@
+{
+    "status": "success",
+    "message": "Transaction updated successfully!",
+    "data": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "amount": "10.00",
+            "currency": "GBP",
+            "reference": "125ABC",
+            "status": "cancelled",
+            "timestamp": "2022-01-24 14:18:42",
+            "created_at": "2022-01-24 14:18:42",
+            "updated_at": "2022-02-09 13:31:14"
+        },
+        {
+            "id": 2,
+            "user_id": 1,
+            "amount": "20.00",
+            "currency": "GBP",
+            "reference": "125ABC",
+            "status": "cancelled",
+            "timestamp": "2022-01-24 14:18:42",
+            "created_at": "2022-01-24 14:18:42",
+            "updated_at": "2022-02-09 13:31:14"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gip-app
+spec:
+  selector:
+    matchLabels:
+      app: gip-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: gip-app
+        tier: api
+    spec:
+      containers:
+      - name: gip-app
+        image: ashwoodslightfoot/earnie:1.1.34
+        resources: {}
+        ports:
+          - containerPort: 80
+        envFrom:
+          - configMapRef:
+              name: gip-app-config
+          - secretRef:
+              name: gip-app-secrets
+        env:
+          - name: CONTAINER_ROLE
+            value: app
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 80
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          timeoutSeconds: 3
+        volumeMounts:
+        - name: earnie-app-persistent-data
+          subPath: appstorage/
+          mountPath: /var/www/html/storage
+      volumes:
+        - name: earnie-app-persistent-data
+          persistentVolumeClaim:
+              claimName: web-app-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gip-app-service
+spec:
+  selector:
+    app: gip-app
+  ports:
+  - port: 80
+    targetPort: 80
+  type: NodePort

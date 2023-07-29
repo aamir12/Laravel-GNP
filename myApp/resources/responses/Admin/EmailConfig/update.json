@@ -1,0 +1,14 @@
+{
+    "status": "success",
+    "message": "Email configuration successfully updated!",
+    "data": {
+        "id": 1,
+        "email_type": "email_verification",
+        "is_enabled": 1,
+        "subject": "Welcome to Earnie! Please verify your email address.",
+        "body": "<p>Nearly there…</p><p>Confirm your email address to finish setting up your account.</p><p>Just click the button below.</p>",
+        "resend_interval": null,
+        "created_at": "2021-01-18 13:31:42",
+        "updated_at": "2021-01-18 13:31:42"
+    }
+}

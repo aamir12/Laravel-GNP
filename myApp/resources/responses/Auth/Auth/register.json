@@ -1,0 +1,10 @@
+{
+    "status": "success",
+    "message": "User Registered Successfully! An email activation link have been sent at your email address",
+    "data": {
+        "token_type": "Bearer",
+        "expires_in": 31622400,
+        "access_token": "string",
+        "refresh_token": "string"
+    }
+}

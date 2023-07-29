@@ -1,0 +1,21 @@
+{
+    "status": "success",
+    "message": "User address created successfully!",
+    "data": {
+        "id": 1,
+        "user_id": 2,
+        "is_default": 0,
+        "name": "John",
+        "phone": "01643 214201",
+        "address_line_1": "21a Edgewood House",
+        "address_line_2": "Greenbank Estate",
+        "address_line_3": "Foxhayes",
+        "town": "Exeter",
+        "county": "Devon",
+        "postcode": "EX16 5BH",
+        "country": "United Kingdom",
+        "delivery_instructions": "Leave parcels behind the shed.",
+        "updated_at": "2021-07-06 10:43:19",
+        "created_at": "2021-07-06 10:43:19"
+    }
+}

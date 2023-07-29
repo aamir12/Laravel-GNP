@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "message": "User Registered Successfully!",
+    "data": [
+        {
+            "first_name": "John",
+            "last_name": "Chiswell",
+            "email": "gevokihe@mail-guru.net",
+            "phone": "+917778885555",
+            "external_id": "DFGHJ1234",
+            "timezone": "Europe/London",
+            "dob": "2019-08-22",
+            "name": "John Chiswell",
+            "activation_code": "clm88cdb",
+            "updated_at": "2021-02-24 06:35:48",
+            "created_at": "2021-02-24 06:35:48",
+            "id": 22
+        }
+    ]
+}

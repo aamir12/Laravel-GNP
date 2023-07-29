@@ -1,0 +1,12 @@
+{
+    "status": "success",
+    "message": "Auth Token Refreshed Successfully!",
+    "data": {
+        "auth": {
+            "token_type": "Bearer",
+            "expires_in": "timestamp",
+            "access_token": "string",
+            "refresh_token": "string"
+        }
+    }
+}

@@ -1,0 +1,211 @@
+{
+    "welcome": "You are welcome!",
+
+    "handler": {
+        "validation_exception": "The given data was invalid.",
+        "success": "Action completed successfully!",
+        "auth_exception": "Unauthenticated" ,
+        "404": "404 Not Found",
+        "method_not_supported": "Method not supported."
+    },
+
+    "auth": {
+        "register_success_email_send": "Registration successful! An email activation link has been sent to your email address.",
+        "register_success": "User Registered Successfully!",
+        "password_change_success": "Password changed successfully!",
+        "password_change_failed": "Password change failed!",
+        "password_expired": "Your password has expired.",
+        "login_success": "User Login Successfully!",
+        "invalid_credentials": "Invalid credentials.",
+        "token_refresh_success": "Auth Token Refreshed Successfully!",
+        "invalid_refresh_token": "The refresh token is invalid.",
+        "logout_success": "Logout Successfully",
+        "invite_required": "Sorry, but you cannot register without an invite!",
+        "update_success": "User updated Successfully!",
+        "password_requires_lowercase": "Password must contain at least one lowercase character.",
+        "password_requires_uppercase": "Password must contain at least one uppercase character.",
+        "password_requires_number": "Password must contain at least one number.",
+        "password_requires_symbol": "Password must contain at least one symbol (e.g. '@' or '!').",
+        "generate_username": "Username generated successfully!"
+    },
+
+    "group": {
+        "created_success": "Group Created Successfully!",
+        "update_success": "Group updated Successfully!",
+        "update_error": "Group update failed!",
+        "delete_success_user_move": "Group deleted and users moved in backup group successfully!",
+        "delete_success": "Group deleted successfully!",
+        "no_users_in_group": "No user found in this group.",
+        "not_empty": "This group contains one or more users or subgroups. Please provide a backup_group_id.",
+        "is_default_required": "This group is the default group. Please provide a default_group_id.",
+        "deleting_backup_parent_group": "You cannot set the backup group to a child of this group!",
+        "user_add_success": "Users added to group successfully!",
+        "user_remove_success": "Users removed from group successfully!"
+    },
+
+    "score": {
+        "kpi_add_success": "KPI data added successfully!",
+        "kpi_list_success": "KPI data list successfully!",
+        "kpi_add_failure": "KPI data creation failed!",
+        "user_score_success": "User score data found!",
+        "wrong_datatype_method_score_error": "Wrong data type and aggregation method!"
+    },
+
+    "verify_email": {
+        "success": "Your e-mail is verified. You can now login.",
+        "already_exist": "Your e-mail is already verified. You can now login.",
+        "link_expire": "Sorry your email cannot be identified."
+    },
+
+    "email_taken": "The Email has already been taken.",
+    "externalid_taken": "The External ID has already been taken.",
+    "user_list_success": "Users found successfully!",
+    "admin_can_access": "Only admin can access this",
+    "user_can_access": "Only user can access this",
+    "user_dashboard_success": "Data found successfully!",
+    "user_dashboard_error": "No data found!",
+    "user_get_success": "User retrieved successfully!",
+    "user_delete_success": "User deleted successfully!",
+    "group_list_success": "Groups found successfully!",
+    "group_success": "Group found successfully!",
+
+    "competition": {
+        "created_success": "Competition Created Successfully!",
+        "summary_success": "Competition summary retrieved successfully!",
+        "list_success": "Competition found successfully!",
+        "list_lottery_success": "List lottery found successfully!",
+        "list_lottery_failure": "No list lottery found!",
+        "updated_success": "Competition Updated Successfully!",
+        "not_started": "That competition hasn't started yet!",
+        "already_entered": "User already entered in competition!",
+        "user_not_in_group": "User not in competition group!",
+        "user_success": "User successfully entered in competition!",
+        "user_lottery_success": "User successfully entered in lottery!",
+        "user_not_in_competition": "You are not entered in this competition!",
+        "revealed_success": "Competition revealed successfully!",
+        "already_revealed": "Competition already revealed!",
+        "not_ended_yet": "That competition hasn’t ended yet!",
+        "already_started": "You cannot update a competition that has already started.",
+        "ended": "That competition has ended."
+    },
+
+    "prize": {
+        "created_success": "Prize Created Successfully!",
+        "update_success": "Prize updated Successfully!",
+        "list_success": "Prize found successfully!",
+        "delete_success": "Prize deleted successfully!",
+        "success_claim": "Prize claimed successfully!",
+        "already_claimed": "That prize has already been claimed!",
+        "not_prize_winner": "You cannot claim a Prize that does not belong to you!",
+        "failed_claimed": "Prize claimed failed!"
+    },
+
+    "winner": {
+        "list_success": "Winners found successfully!"
+    },
+
+    "league": {
+        "found_success": "League found successfully!",
+        "delete_success": "League deleted successfully!",
+        "created_success": "League Created Successfully!",
+        "update_success": "League updated Successfully!",
+        "parent_error": "Can not use this parent id",
+        "user_add_error": "Parent league could not have group",
+        "list_success": "Retrieved leagues successfully.",
+        "leave_public_failure": "You cannot leave this league because it is public!",
+        "leave_owner_failure": "You cannot leave this league because you own it!",
+        "leave_group_failure": "You cannot leave this league because it is derived from a group you are in!",
+        "leave_not_user_failure": "You cannot leave this league because you are not in it",
+        "leave_failure": "League not found",
+        "leave_success": "You are successfully removed from league",
+        "role_user_error": "Given user id role should be user!",
+        "owner_user_same_error": "You can't invite yourself to your own league!",
+        "league_invite_success": "Invited successfully!",
+        "accept_invite_success": "Invite accepted successfully!",
+        "accept_invite_error": "Invite not found!",
+        "reject_invite_success": "Invite rejected successfully!",
+        "permission_denied": "You do not have permission to update this league.",
+        "shutdown_success": "League shut down successfully!",
+        "shutdown_failure": "You do not have permission to shut down this league!",
+        "delete_failure": "League not deleted"
+     },
+
+     "email_config": {
+        "activation_success": "Email activation set successfully!",
+        "update_success": "Email configuration successfully updated!",
+        "update_failure": "Email configuration change failure",
+        "found_success": "Email config found successfully!",
+        "list_success": "Email configuration list found!",
+        "list_empty": "Email configuration list is empty!"
+    },
+
+    "branding": {
+        "update_success": "Branding successfully updated!",
+        "get_success": "Branding retrieved successfully!"
+    },
+
+    "achievement": {
+        "found_success": "Achievement found successfully!",
+        "found_error": "Achievement not found!",
+        "create_success": "Achievement created successfully!",
+        "create_error": "Achievement creation failed!",
+        "list_success": "Achievement list found!" ,
+        "empty_list": "Achievement list is empty!",
+        "update_success": "Achievement updated successfully!",
+        "update_error": "Achievement update failed!",
+        "delete_success": "Achievement deleted successfully!",
+        "delete_error": "Achievement deletion failed!",
+        "claim_success": "Achievement claimed successfully!",
+        "already_claimed": "That achievement has already been claimed!",
+        "not_achievement_winner": "You cannot claim an achievement that does not belong to you!",
+        "failed_claimed": "Achievement claimed failed!"
+    },
+
+    "deliverable": {
+        "list_success": "Deliverables retrieved successfully!",
+        "found_success":"Deliverable found successfully!",
+        "found_error": "Deliverable not found!",
+        "update_success":"Deliverable updated successfully!"
+    },
+
+    "manual_email": {
+        "success": "Successfully sent emails!",
+        "failure": "Failed to send emails because no users were found."
+    },
+
+    "withdraw": {
+        "success": "Balance successfully withdraw!",
+        "failure": "Balance withdraw error.",
+        "negative_value": "You cannot withdraw a negative amount.",
+        "format_incorrect": "Must be a valid monetary value.",
+        "insufficent_balance": "You cannot withdraw an amount larger than your current balance.",
+        "paypal_email_not_set": "You must set your PayPal email address before you can withdraw funds."
+    },
+
+    "transaction": {
+        "balance_found": "Balance retrieved successfully!",
+        "list_success": "Transaction list found!",
+        "update_success": "Transaction updated successfully!",
+        "update_error": "Transaction update failed!",
+        "bulk_update_success": "Transactions updated successfully!"
+    },
+
+    "user": {
+        "profile_update_success": "Profile successfully updated"
+    },
+
+    "user_address":{
+        "found_success": "User address found successfully!",
+        "found_error": "User address not found!",
+        "create_success": "User address created successfully!",
+        "create_error": "User address creation failed!",
+        "list_success": "User address list found!" ,
+        "empty_list": "User address list is empty!",
+        "update_success": "User address updated successfully!",
+        "update_error": "User address update failed!",
+        "delete_success": "User address deleted successfully!",
+        "delete_error": "User address deletion failed!"
+    },
+
+    "nothing_updated": "Nothing was updated."
+}

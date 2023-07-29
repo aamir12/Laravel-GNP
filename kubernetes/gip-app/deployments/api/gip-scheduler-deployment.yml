@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gip-scheduler
+spec:
+  selector:
+    matchLabels:
+      app: gip-scheduler
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: gip-scheduler
+        tier: api
+    spec:
+      containers:
+        - name: gip-scheduler
+          image: ashwoodslightfoot/earnie:1.1.34
+          resources: {}
+          envFrom:
+            - configMapRef:
+                name: gip-app-config
+            - secretRef:
+                name: gip-app-secrets
+          env:
+            - name: CONTAINER_ROLE
+              value: scheduler

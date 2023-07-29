@@ -1,0 +1,12 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "email": [
+            "The Email has already been taken."
+        ],
+        "username": [
+            "The Username has already been taken."
+        ]
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "status": "success",
+    "message": "Deliverable updated successfully!",
+    "data": {
+        "id": 1,
+        "is_shipped": "1",
+        "shipping_name": "Marjolaine Harvey",
+        "shipping_number": "92865500",
+        "shipping_email": "maybell10@example.org",
+        "shipping_addressline1": "8713 Marlin Lane North Estelhaven, TX 19520",
+        "shipping_addressline2": "2619 Padberg Prairie Liamville, MT 79680-7246",
+        "shipping_addressline3": "6216 Kiera Mall Apt. 576\nLake Tommieside, OR 38787-7698",
+        "shipping_postcode": "17363-2129",
+        "shipping_county": "Arkansas",
+        "shipping_country": "Singapore",
+        "shipping_comment": "Reprehenderit in voluptatem quia aut.",
+        "tracking_ref": "aheud",
+        "created_at": "2021-08-17 10:17:29",
+        "updated_at": "2021-08-17 10:18:52",
+        "created_by": null,
+        "updated_by": 1
+    }
+}

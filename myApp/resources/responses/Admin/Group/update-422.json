@@ -1,0 +1,21 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "id": [
+            "The id field is required."
+        ],
+        "name": [
+            "The name must be a string."
+        ],
+        "parent_id": [
+            "A group with that id does not exist."
+        ],
+        "is_default_group": [
+            "The is default group field must be a boolean."
+        ],
+        "metadata": [
+            "The metadata must be a valid JSON string."
+        ]
+    }
+}

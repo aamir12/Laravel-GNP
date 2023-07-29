@@ -1,0 +1,18 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "users": [
+            "The users field is required."
+        ],
+        "users.0.email": [
+            "The users.0.email field is required."
+        ],
+        "users.0.external_id": [
+            "The users.0.external_id has already been taken."
+        ],
+        "users.0.groups.0": [
+            "A group with that id does not exist."
+        ]
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "status": "success",
+    "message": "List lottery found successfully!",
+    "data": [
+        {
+            "id": 12,
+            "name": "Penelope Gottlieb",
+            "description": "Reiciendis amet aut sequi tenetur. Praesentium consequatur eius fuga. Quo sunt esse quo. Error aperiam est dicta blanditiis et molestiae.",
+            "image": "test.png",
+            "type": "Fixed",
+            "score_threshold": 100,
+            "period": "daily",
+            "start_date": "2021-09-11 08:25",
+            "end_date": "2021-09-13 08:25",
+            "state": "ended",
+            "is_lottery": 1,
+            "space_count": 0,
+            "entry_fee": "0.00",
+            "terms_url": "https://www.example.com",
+            "auto_enter_user": 0,
+            "image_type": null,
+            "status": "archived",
+            "created_at": "2021-09-14 08:25:02",
+            "updated_at": "2021-09-14 08:25:02",
+            "deleted_at": null,
+            "created_by": null,
+            "updated_by": null,
+            "threshold_operator": ">="
+        }
+    ]
+}

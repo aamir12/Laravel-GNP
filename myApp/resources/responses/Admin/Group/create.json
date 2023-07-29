@@ -1,0 +1,13 @@
+{
+    "status": "success",
+    "message": "Group Created Successfully!",
+    "data": {
+        "id": 32,
+        "name": "London Group",
+        "parent_id": 10,
+        "is_default_group": 0,
+        "created_at": "2020-10-22 13:34:56",
+        "updated_at": "2020-10-22 13:34:56",
+        "meta": "[{\"title\": \"Some Metadata Title\"}, {\"url\": \"https:www.example.com\"}]"
+    }
+}

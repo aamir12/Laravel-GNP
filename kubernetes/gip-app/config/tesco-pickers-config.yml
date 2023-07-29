@@ -1,0 +1,64 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gip-app-config
+  namespace: earnie-tesco-pickers
+  labels:
+    app: gip-app
+data:
+  # App Settings
+  APP_URL: https://tesco-pickers.myearnie.co.uk/
+  APP_NAME: "Earnie Tesco Pickers"
+  APP_ENV: production
+  APP_KEY: base64:gUf/3dqdv166c4/+MinjwCGHclWEYG67TQzoP3xFclE=
+  APP_DEBUG: "false"
+  APP_SERVICE_NAME: gip-app-service
+  OPEN_REGISTRATION_ALLOWED: "false"
+  GENERATE_USERNAMES: "false"
+  EXTERNAL_ID_LABEL: "Picker ID"
+  EXTERNAL_ID_ACCOUNT_ACTIVATION: "true"
+  SUPPORT_URL: https://myearnie.co.uk/picking/contact.php
+
+  # DB Settings
+  DB_CONNECTION: mysql
+  DB_HOST: lcpawsmysql-myearnie-tescopickers.cjq8eonkhick.eu-west-1.rds.amazonaws.com
+  DB_PORT: "3306"
+  DB_DATABASE: gip
+  DB_USERNAME: userTescoPickersMyEarnie
+
+  # Mail Settings
+  MAIL_MAILER: sparkpost
+  MAIL_FROM_ADDRESS: support@myearnie.co.uk
+  ACCOUNTING_MAIL_ADDRESS: accounting@myearnie.co.uk
+
+  # Kumulos Settings
+  KUMULOS_API_URL: https://crm.kumulos.com/v1
+
+  # KPI Settings
+  KPI_DATA_TYPE: fraction
+  KPI_AGGREGATION_METHOD: weightedaverage
+  KPI_BASE_PERIOD: weekly
+  KPI_SCORE_UNIT: 'Pick Rate'
+  AUTO_CREATE_USERS_ON_KPI_SUBMIT: "true"
+
+  # File Storage Settings
+  FILESYSTEM_DRIVER: local
+  # AWS_ACCESS_KEY_ID:
+  # AWS_DEFAULT_REGION: eu-west-1
+  # AWS_BUCKET:
+
+  # Password Settings
+  PASSWORD_EXPIRE_SECURITY: "false"
+  EXPIRE_PASSWORD_IN_DAYS: "45"
+  LOGIN_ATTEMPTS_BEFORE_LOCK: "4"
+  PASSWORD_LOCK_TIME_IN_MINUTES: "1"
+  PASSWORD_VALIDATION_MIN: "6"
+  PASSWORD_VALIDATION_MAX: "255"
+  PASSWORD_REQUIRES_LOWERCASE_CHAR: "false"
+  PASSWORD_REQUIRES_UPPERCASE_CHAR: "false"
+  PASSWORD_REQUIRES_NUMBER: "false"
+  PASSWORD_REQUIRES_SYMBOL: "false"
+
+  # Deeplink Settings
+  IOS_DEEPLINK: '{"applinks":{"apps":[],"details":[{"appID":"placeholder","paths":["NOT/_/*","/*"]}]}}'
+  ANDROID_DEEPLINK: '[{"relation": ["delegate_permission/common.handle_all_urls"],"target": {"namespace": "android_app","package_name": "placeholder","sha256_cert_fingerprints":["CF:91:22:A8:F0:66:CA:5C:08:54:F3:9C:B4:17:17:3E:DE:6C:1A:01:85:8F:0D:7E:5B:68:D8:F4:6C:B8:1C:FD"]}}]'

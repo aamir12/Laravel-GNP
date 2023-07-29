@@ -1,0 +1,9 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "users.0.id": [
+            "The users.0.id field is required."
+        ]
+    }
+}

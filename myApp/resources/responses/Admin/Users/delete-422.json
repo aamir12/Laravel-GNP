@@ -1,0 +1,9 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "id": [
+            "The selected id is invalid."
+        ]
+    }
+}

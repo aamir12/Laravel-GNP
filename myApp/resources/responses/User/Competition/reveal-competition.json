@@ -1,0 +1,32 @@
+{
+    "status": "success",
+    "message": "Competition revealed successfully!",
+    "data": {
+      "is_winner": true,
+      "prize": {
+        "id": 1,
+        "stock_id": 1,
+        "competition_id": 11,
+        "reference": "abcdef",
+        "max_winners": 5,
+        "created_at": "2022-03-30 12:29:53",
+        "updated_at": "2022-03-30 12:29:53",
+        "deleted_at": null,
+        "created_by": 12,
+        "updated_by": 12,
+        "stock": {
+          "id": 1,
+          "name": "iPhone 12 Pro",
+          "image": "https://www.example.com/image/1603547765",
+          "image_type": "local",
+          "type": "cash",
+          "amount": "100.00",
+          "currency": "GBP",
+          "created_at": "2022-03-31 12:49:01",
+          "updated_at": "2022-03-31 12:49:01",
+          "created_by": 12,
+          "updated_by": 12
+        }
+      }
+    }
+}

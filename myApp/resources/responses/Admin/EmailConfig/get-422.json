@@ -1,0 +1,12 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "id": [
+            "The id field is required when email type is not present."
+        ],
+        "email_type": [
+            "The email type field is required when id is not present."
+        ]
+    }
+}

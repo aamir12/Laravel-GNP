@@ -1,0 +1,51 @@
+{
+    "status": "success",
+    "message": "User score data found!",
+    "data": [
+        {
+            "period_start": "2019-09-16 00:00:00",
+            "period_end": "2019-09-22 23:59:59",
+            "score_value": "0.57",
+            "data_type": "fraction",
+            "score_unit": null,
+            "score_true_text": null,
+            "score_false_text": null
+        },
+        {
+            "period_start": "2019-09-23 00:00:00",
+            "period_end": "2019-09-29 23:59:59",
+            "score_value": "10.86",
+            "data_type": "fraction",
+            "score_unit": null,
+            "score_true_text": null,
+            "score_false_text": null
+        },
+        {
+            "period_start": "2019-09-30 00:00:00",
+            "period_end": "2019-10-06 23:59:59",
+            "score_value": "14.00",
+            "data_type": "fraction",
+            "score_unit": null,
+            "score_true_text": null,
+            "score_false_text": null
+        },
+        {
+            "period_start": "2019-10-07 00:00:00",
+            "period_end": "2019-10-13 23:59:59",
+            "score_value": "14.29",
+            "data_type": "fraction",
+            "score_unit": null,
+            "score_true_text": null,
+            "score_false_text": null
+        },
+        {
+            "period_start": "2019-10-14 00:00:00",
+            "period_end": "2019-10-14 07:02:55",
+            "score_value": "13.57",
+            "data_type": "fraction",
+            "score_unit": null,
+            "score_true_text": null,
+            "score_false_text": null
+        }
+    ]
+}

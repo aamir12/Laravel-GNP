@@ -1,0 +1,86 @@
+{
+    "status": "success",
+    "message": "Competition Found Successfully!",
+    "data": [
+        {
+            "id": 1,
+            "name": "Awesome Comp",
+            "description": "The world's greatest competition!",
+            "image": "https://www.example.com/image/1603547765",
+            "image_type": "local",
+            "type": "Rolling",
+            "score_threshold": 100,
+            "period": "daily",
+            "start_date": "2020-10-24 15:20:00",
+            "end_date": "2020-10-25 15:19:00",
+            "is_lottery": 1,
+            "space_count": 25,
+            "entry_fee": "9.99",
+            "terms_url": "https://www.example.com",
+            "auto_enter_user": 1,
+            "status": "draft",
+            "has_won": 1,
+            "threshold_operator": ">",
+            "created_at": "2020-10-24 13:56:05",
+            "updated_at": "2020-10-24 13:56:05",
+            "prizes": [
+                {
+                    "id": 1,
+                    "stock_id": 1,
+                    "competition_id": 2,
+                    "reference": "ftnZZBxbxo",
+                    "max_winners": 1,
+                    "created_at": "2020-10-24 14:18:41",
+                    "updated_at": "2020-10-24 14:18:41",
+                    "stock": {
+                        "id": 1,
+                        "name": "iPhone 12 Pro",
+                        "image": "https://www.example.com/image/12032347415",
+                        "image_type": "local",
+                        "type": "cash",
+                        "amount": "100.00",
+                        "currency": "GBP",
+                        "created_at": "2020-10-24 14:18:41",
+                        "updated_at": "2020-10-24 14:18:41"
+                    }
+                },
+                {
+                    "id": 2,
+                    "stock_id": 2,
+                    "competition_id": 2,
+                    "reference": "x8G21Xf8VE",
+                    "max_winners": 1,
+                    "created_at": "2020-10-24 14:18:42",
+                    "updated_at": "2020-10-24 14:18:42",
+                    "stock": {
+                        "id": 2,
+                        "name": "Pixel 5",
+                        "image": "https://www.example.com/image/2322414323",
+                        "image_type": "local",
+                        "type": "cash",
+                        "amount": "100.00",
+                        "currency": "GBP",
+                        "created_at": "2020-10-24 14:18:42",
+                        "updated_at": "2020-10-24 14:18:42"
+                    }
+                }
+            ],
+            "groups": [
+                {
+                    "id": 23,
+                    "name": "London Group",
+                    "parent_id": 0,
+                    "is_default_group": 1,
+                    "created_at": "2020-10-23 14:36:32",
+                    "updated_at": "2020-10-23 14:36:32",
+                    "pivot": {
+                        "competition_id": 1,
+                        "group_id": 23,
+                        "created_at": "2020-10-24 13:56:05",
+                        "updated_at": "2020-10-24 13:56:05"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+#### Docker file to build gip-app docker container from scratch ####
+FROM php:8.1.3-apache
+
+ARG WWWGROUP
+ARG NODE_VERSION=16
+
+WORKDIR /var/www/html
+
+ENV DEBIAN_FRONTEND noninteractive
+ENV TZ=UTC
+ENV IPE_GD_WITHOUTAVIF=1
+
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Copy code inside container
+COPY myApp/ /var/www/html
+COPY apache2.conf /etc/apache2/sites-enabled/000-default.conf
+COPY php.ini /usr/local/etc/php/conf.d/php-custom.ini
+COPY start.sh /
+ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
+
+RUN chown -R www-data:www-data /var/www/html && \
+    \
+# Install Common Tools
+    apt-get update && apt-get install --no-install-recommends -y \
+    apt-utils \
+    software-properties-common \
+    git \
+    unzip \
+    rsync \
+    \
+# Install PHP extensions ($PHPIZE_DEPS is declared in the php:7.4-apache base image)
+    $PHPIZE_DEPS && \
+    docker-php-ext-install \
+    pdo_mysql \
+    exif \
+    pcntl \
+    bcmath && \
+    chmod +x /usr/local/bin/install-php-extensions && \
+    sync && \
+    install-php-extensions gd xdebug-3.1.3 && \
+    \
+# Install Composer
+    php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer && \
+    \
+# Install Node
+    curl -sL https://deb.nodesource.com/setup_$NODE_VERSION.x | bash && \
+    apt-get install -y nodejs && \
+    \
+# Clear Cache
+    apt-get -y autoremove && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+    \
+# Configure Apache
+    a2enmod rewrite && \
+    \
+# Set Permissions
+    chmod +x /start.sh
+
+# Expose container port
+EXPOSE 80
+
+CMD ["/start.sh"]

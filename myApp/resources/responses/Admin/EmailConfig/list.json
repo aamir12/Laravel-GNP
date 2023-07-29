@@ -1,0 +1,26 @@
+{
+    "status": "success",
+    "message": "Email configuration list found!",
+    "data": [
+        {
+            "id": 1,
+            "email_type": "email_verification",
+            "is_enabled": 1,
+            "subject": "Welcome to Earnie! Please verify your email address.",
+            "body": "<p>Nearly there…</p><p>Confirm your email address to finish setting up your account.</p><p>Just click the button below.</p>",
+            "resend_interval": "7.00",
+            "created_at": "2020-10-16 11:16:41",
+            "updated_at": "2020-10-16 11:16:41"
+        },
+        {
+            "id": 2,
+            "email_type": "invitation",
+            "is_enabled": 1,
+            "subject": "You’ve been invited to Earnie!",
+            "body": "<p>You’ve been invited to Earnie!</p><p>Your way to get rewarded for the things you do on a daily basis.</p><p>How did I get access to this?</p><p>You received this email because your company have given you access to the Earnie platform. The next step is to activate your account!</p><p>What is included?</p><p>You'll get access to view your score and enter competitions to win prizes and cash.</p><p>How do I log in?</p><p>Click the button below to set up your account.</p>",
+            "resend_interval": null,
+            "created_at": "2020-10-16 11:16:41",
+            "updated_at": "2020-10-16 11:16:41"
+        }
+    ]
+}

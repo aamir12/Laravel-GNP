@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: earnie-testing
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: earnie-lightfoot
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: earnie-bump
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: earnie-lightfoot-bool
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: earnie-get-active
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: earnie-tesco-pickers

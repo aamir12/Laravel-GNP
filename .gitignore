@@ -1,0 +1,11 @@
+/nbproject
+/mysql-volume
+.DS_Store
+.idea
+/myApp/composer.lock
+kubernetes/gip-app/secrets/*.yml
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json

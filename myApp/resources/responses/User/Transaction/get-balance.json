@@ -1,0 +1,20 @@
+{
+    "status": "success",
+    "message": "Balance get Successfully!",
+    "data": {
+        "balance": "10.00",
+        "transactions": [
+            {
+                "id": 10,
+                "user_id": 81,
+                "amount": "10.00",
+                "currency": "INR",
+                "reference": "Competition Prize",
+                "status": "pending",
+                "timestamp": "2020-10-12 07:53:09",
+                "created_at": "2020-10-07 07:53:09",
+                "updated_at": "2020-10-07 07:53:09"
+            }
+        ]
+    }
+}

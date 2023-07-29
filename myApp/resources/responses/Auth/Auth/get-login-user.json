@@ -1,0 +1,12 @@
+{
+    "status": "success",
+    "message": "string",
+    "data": {
+        "id": "integer",
+        "name": "string",
+        "email": "string",
+        "email_verified_at": "string",
+        "created_at": "string [date-time]",
+        "updated_at": "string [date-time]"
+    }
+}

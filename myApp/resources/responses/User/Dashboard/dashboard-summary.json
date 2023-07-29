@@ -1,0 +1,66 @@
+{
+    "status": "success",
+    "message": "Data found successfully!",
+    "data": {
+        "kpi_base_period": "weekly",
+        "kpi_data_type": "fraction",
+        "kpi_aggregation_method": "weightedaverage",
+        "upcoming_lottery": {
+            "id": "integer",
+            "name": "string",
+            "description": "string",
+            "image": "string",
+            "type": "string",
+            "score_threshold": "integer",
+            "period": "string",
+            "start_date": "string",
+            "end_date": "string",
+            "is_lottery": "integer",
+            "space_count": "integer",
+            "entry_fee": "float",
+            "terms_url": "string",
+            "group": "integer",
+            "auto_enter_user": "integer",
+            "is_deleted": "integer",
+            "image_type": "integer",
+            "status": "string",
+            "threshold_operator": "enum",
+            "created_at": "datetime",
+            "updated_at": "datetime"
+        },
+        "unrevealed_lotteries": {
+            "id": "integer",
+            "name": "string",
+            "description": "string",
+            "image": "string",
+            "type": "string",
+            "score_threshold": "integer",
+            "period": "string",
+            "start_date": "string",
+            "end_date": "string",
+            "is_lottery": "integer",
+            "space_count": "integer",
+            "entry_fee": "float",
+            "terms_url": "string",
+            "group": "integer",
+            "auto_enter_user": "integer",
+            "is_deleted": "integer",
+            "image_type": "integer",
+            "status": "string",
+            "threshold_operator": "enum",
+            "created_at": "datetime",
+            "updated_at": "datetime"
+        },
+        "score": [
+            {
+                "period_start": "2021-01-18 00:00:00",
+                "period_end": "2021-01-22 12:00:59",
+                "score_value": "100.00",
+                "data_type": "fraction",
+                "score_unit": null,
+                "score_true_text": null,
+                "score_false_text": null
+            }
+        ]
+    }
+}

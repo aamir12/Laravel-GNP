@@ -1,0 +1,12 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "group_id": [
+            "The group id field is required."
+        ],
+        "backup_group_id": [
+            "The backup group id field is required."
+        ]
+    }
+}

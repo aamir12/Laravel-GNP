@@ -1,0 +1,102 @@
+{
+    "status": "success",
+    "message": "Competition summary retrieved successfully!",
+    "data": {
+        "upcoming": [
+            {
+                "id": 1,
+                "name": "Awesome Comp",
+                "description": "The world's greatest competition!",
+                "image": "https://www.example.com/image/1603547765",
+                "image_type": "local",
+                "type": "Rolling",
+                "score_threshold": "100",
+                "period": "daily",
+                "start_date": "2020-10-24 15:20:00",
+                "end_date": "2020-10-25 15:19:00",
+                "is_lottery": 1,
+                "space_count": 25,
+                "entry_fee": "9.99",
+                "terms_url": "https://www.example.com",
+                "auto_enter_user": 1,
+                "status": "live",
+                "state": "pending",
+                "threshold_operator": ">",
+                "created_at": "2020-10-24 13:56:05",
+                "updated_at": "2020-10-24 13:56:05"
+            }
+        ],
+        "running": [
+            {
+                "id": 2,
+                "name": "Awesome Comp",
+                "description": "The world's greatest competition!",
+                "image": "https://www.example.com/image/1603547765",
+                "image_type": "local",
+                "type": "Rolling",
+                "score_threshold": "100",
+                "period": "daily",
+                "start_date": "2020-10-24 15:20:00",
+                "end_date": "2020-10-25 15:19:00",
+                "is_lottery": 1,
+                "space_count": 25,
+                "entry_fee": "9.99",
+                "terms_url": "https://www.example.com",
+                "auto_enter_user": 1,
+                "status": "live",
+                "state": "started",
+                "threshold_operator": ">",
+                "created_at": "2020-10-24 13:56:05",
+                "updated_at": "2020-10-24 13:56:05"
+            }
+        ],
+        "open": [
+            {
+                "id": 3,
+                "name": "Awesome Comp",
+                "description": "The world's greatest competition!",
+                "image": "https://www.example.com/image/1603547765",
+                "image_type": "local",
+                "type": "Rolling",
+                "score_threshold": "100",
+                "period": "daily",
+                "start_date": "2020-10-24 15:20:00",
+                "end_date": "2020-10-25 15:19:00",
+                "is_lottery": 1,
+                "space_count": 25,
+                "entry_fee": "9.99",
+                "terms_url": "https://www.example.com",
+                "auto_enter_user": 0,
+                "status": "live",
+                "state": "started",
+                "threshold_operator": ">",
+                "created_at": "2020-10-24 13:56:05",
+                "updated_at": "2020-10-24 13:56:05"
+            }
+        ],
+        "unrevealed": [
+            {
+                "id": 4,
+                "name": "Awesome Comp",
+                "description": "The world's greatest competition!",
+                "image": "https://www.example.com/image/1603547765",
+                "image_type": "local",
+                "type": "Rolling",
+                "score_threshold": "100",
+                "period": "daily",
+                "start_date": "2020-10-24 15:20:00",
+                "end_date": "2020-10-25 15:19:00",
+                "is_lottery": 1,
+                "space_count": 25,
+                "entry_fee": "9.99",
+                "terms_url": "https://www.example.com",
+                "auto_enter_user": 1,
+                "status": "archived",
+                "state": "ended",
+                "threshold_operator": ">",
+                "created_at": "2020-10-24 13:56:05",
+                "updated_at": "2020-10-24 13:56:05"
+            }
+        ]
+    }
+}

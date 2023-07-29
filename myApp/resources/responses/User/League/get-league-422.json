@@ -1,0 +1,9 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "id": [
+            "The league id field is required."
+        ]
+    }
+}

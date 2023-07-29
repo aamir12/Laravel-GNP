@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gip-queue
+spec:
+  selector:
+    matchLabels:
+      app: gip-queue
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: gip-queue
+        tier: api
+    spec:
+      containers:
+        - name: gip-queue
+          image: ashwoodslightfoot/earnie:1.1.34
+          resources: {}
+          envFrom:
+            - configMapRef:
+                name: gip-app-config
+            - secretRef:
+                name: gip-app-secrets
+          env:
+            - name: CONTAINER_ROLE
+              value: queue

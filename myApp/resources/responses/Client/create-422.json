@@ -1,0 +1,12 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "user_id": [
+            "The user_id field is required."
+        ],
+        "kpi.*.value": [
+            "The kpi.0.value field is required."
+        ]
+    }
+}

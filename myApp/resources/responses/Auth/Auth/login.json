@@ -1,0 +1,38 @@
+{
+    "status": "success",
+    "message": "User Login Successfully!",
+    "data": {
+        "user": {
+            "id": 1,
+            "name": "string",
+            "email": "string",
+            "username": "string",
+            "first_name": "string",
+            "last_name": "string",
+            "timezone": "string",
+            "phone": "string",
+            "dob": "string",
+            "activation_code": "string",
+            "external_id": "string",
+            "metadata": "string",
+            "email_verified_at": "string",
+            "status": "integer",
+            "created_at": "datetime",
+            "updated_at": "datetime",
+            "paypal_email": null,
+            "roles": [
+                {
+                    "id": 2,
+                    "name": "user"
+                }
+            ],
+            "groups": []
+        },
+        "auth": {
+            "token_type": "Bearer",
+            "expires_in": "timestamp",
+            "access_token": "string",
+            "refresh_token": "string"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gip-app-config
+  namespace: earnie-lightfoot
+  labels:
+    app: gip-app
+data:
+  # App Settings
+  APP_URL: https://earnie.lightfoot.co.uk/
+  APP_NAME: "Earnie App"
+  APP_ENV: staging
+  APP_KEY: base64:ykl3giGzAP/zDgtDQsvT6bCHD/aXcy0T6JA+vFgHTeU=
+  APP_DEBUG: "false"
+  APP_SERVICE_NAME: gip-app-service
+  OPEN_REGISTRATION_ALLOWED: "false"
+  GENERATE_USERNAMES: "true"
+  EXTERNAL_ID_LABEL: ""
+
+  # DB settings
+  DB_CONNECTION: mysql
+  DB_HOST: lcpawsmysql-myearnie-dev-percentage.cjq8eonkhick.eu-west-1.rds.amazonaws.com
+  DB_PORT: "3306"
+  DB_DATABASE: gip
+  DB_USERNAME: userPercentageMyearnie
+
+  # Mail settings
+  MAIL_MAILER: sparkpost
+  MAIL_FROM_ADDRESS: earnie@lightfoot.co.uk
+  ACCOUNTING_MAIL_ADDRESS: gipapp.test@gmail.com
+
+  # KPI settings
+  KPI_DATA_TYPE: fraction
+  KPI_AGGREGATION_METHOD: weightedaverage
+  KPI_BASE_PERIOD: weekly
+  KPI_SCORE_UNIT: "%"
+
+  # File Storage Settings
+  FILESYSTEM_DRIVER: local
+  # AWS_ACCESS_KEY_ID:
+  # AWS_DEFAULT_REGION: eu-west-1
+  # AWS_BUCKET:
+
+  # Password settings
+  PASSWORD_EXPIRE_SECURITY: "false"
+  EXPIRE_PASSWORD_IN_DAYS: "45"
+  LOGIN_ATTEMPTS_BEFORE_LOCK: "4"
+  PASSWORD_LOCK_TIME_IN_MINUTES: "1"
+  PASSWORD_VALIDATION_MAX: "120"
+  PASSWORD_VALIDATION_REGEX4: '' # To allow password with no special chars.
+
+  IOS_DEEPLINK: '{"applinks":{"apps":[],"details":[{"appID":"placeholder","paths":["NOT/_/*","/*"]}]}}'
+  ANDROID_DEEPLINK: '[{"relation": ["delegate_permission/common.handle_all_urls"],"target": {"namespace": "android_app","package_name": "placeholder","sha256_cert_fingerprints":["CF:91:22:A8:F0:66:CA:5C:08:54:F3:9C:B4:17:17:3E:DE:6C:1A:01:85:8F:0D:7E:5B:68:D8:F4:6C:B8:1C:FD"]}}]'

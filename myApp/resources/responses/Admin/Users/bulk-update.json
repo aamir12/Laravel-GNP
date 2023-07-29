@@ -1,0 +1,37 @@
+{
+    "status": "success",
+    "message": "User updated Successfully!",
+    "data": [
+        {
+            "id": 1,
+            "name": "Pallavi Biwal",
+            "email": "bulkuser18@gmail.com",
+            "username": null,
+            "first_name": "Pallavi",
+            "last_name": "Biwal",
+            "timezone": "Europe/London",
+            "phone": "+919090909090",
+            "dob": "2000-09-01",
+            "activation_code": "mu6cvube",
+            "external_id": "DFGHJ123",
+            "is_activated": 0,
+            "created_at": "2021-02-24 06:52:32",
+            "updated_at": "2021-02-24 07:11:29",
+            "paypal_email": "biwal.pallavi@gmail.com",
+            "roles": [
+                {
+                    "id": 2,
+                    "name": "user"
+                }
+            ],
+            "groups": [
+                {
+                    "id": 1
+                },
+                {
+                    "id": 2
+                }
+            ]
+        }
+    ]
+}

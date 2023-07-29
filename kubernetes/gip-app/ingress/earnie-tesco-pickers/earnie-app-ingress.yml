@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-gip-app-service
+  namespace: earnie-tesco-pickers
+  annotations:
+    # use the shared ingress-nginx
+    kubernetes.io/ingress.class: "nginx"
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:eu-west-1:865258441275:certificate/1830e54a-4d80-4a78-a92d-027ffef7e664
+spec:
+  rules:
+  - host: tesco-pickers.myearnie.co.uk
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: gip-app-service
+            port:
+              number: 80

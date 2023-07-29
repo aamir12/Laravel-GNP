@@ -1,0 +1,12 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "username": [
+            "The Username field is required."
+        ],
+        "password": [
+            "The Password field is required."
+        ]
+    }
+}

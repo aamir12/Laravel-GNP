@@ -1,0 +1,51 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gip-app-config
+  namespace: earnie-local
+  labels:
+    app: gip-app
+data:
+  # App Settings
+  APP_URL: http://localhost:90/
+  APP_NAME: "Earnie App"
+  APP_ENV: development
+  APP_KEY: base64:f3EIHwG4mkadworzcgN3wK0VFuetQkZi0vfi8Eff6MI=
+  APP_DEBUG: "true"
+  APP_SERVICE_NAME: gip-app-service
+  OPEN_REGISTRATION_ALLOWED: "true"
+  GENERATE_USERNAMES: "true"
+  EXTERNAL_ID_LABEL: ""
+
+  # DB settings
+  DB_CONNECTION: mysql
+  DB_HOST: mysql-db-service
+  DB_PORT: "3306"
+  DB_DATABASE: gip
+  DB_USERNAME: root
+
+  # Mail settings
+  MAIL_FROM_ADDRESS: earnie@lightfoot.co.uk
+  ACCOUNTING_MAIL_ADDRESS: gipapp.test@gmail.com
+
+  # KPI settings
+  KPI_DATA_TYPE: fraction
+  KPI_AGGREGATION_METHOD: weightedaverage
+  KPI_BASE_PERIOD: weekly
+  KPI_SCORE_UNIT: "%"
+
+  # File Storage Settings
+  FILESYSTEM_DRIVER: local
+  # AWS_ACCESS_KEY_ID:
+  # AWS_DEFAULT_REGION: eu-west-1
+  # AWS_BUCKET:
+
+  # Password settings
+  PASSWORD_EXPIRE_SECURITY: "false"
+  EXPIRE_PASSWORD_IN_DAYS: "45"
+  LOGIN_ATTEMPTS_BEFORE_LOCK: "4"
+  PASSWORD_LOCK_TIME_IN_MINUTES: "1"
+  PASSWORD_VALIDATION_MAX: "120"
+  PASSWORD_VALIDATION_REGEX4: "@$!%*#?&-_"
+
+  XDEBUG_CONFIG: remote_host=54b2689c4cdb.ngrok.io remote_port=80 remote_enable=1

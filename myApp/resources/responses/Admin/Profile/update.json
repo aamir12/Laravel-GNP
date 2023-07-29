@@ -1,0 +1,28 @@
+{
+    "status": "success",
+    "message": "Profile successfully updated",
+    "data": {
+        "id": 2,
+        "name": "John Doe",
+        "email": "johndoe@gmail.com",
+        "username": "JohnDoe",
+        "first_name": "John",
+        "last_name": "Doe",
+        "timezone": "Europe/London",
+        "phone": "+919090909090",
+        "dob": "2000-09-01",
+        "activation_code": "cui0i2g5",
+        "external_id": null,
+        "is_activated": 0,
+        "created_at": "2020-10-16 11:16:38",
+        "updated_at": "2020-10-16 11:16:38",
+        "paypal_email": null,
+        "roles": [
+            {
+                "id": 1,
+                "name": "admin"
+            }
+        ],
+        "groups": []
+    }
+}

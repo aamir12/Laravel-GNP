@@ -1,0 +1,18 @@
+{
+    "status": "error",
+    "message": "The given data was invalid.",
+    "errors": {
+        "kpi.*.user_id": [
+            "The kpi.0.user_id field is required when none of kpi.0.email / kpi.0.external_id are present."
+        ],
+        "kpi.*.email": [
+            "The kpi.0.email field is required when none of kpi.0.user_id / kpi.0.external_id are present."
+        ],
+        "kpi.*.external_id": [
+            "The kpi.0.external_id field is required when none of kpi.0.email / kpi.0.user_id are present."
+        ],
+        "kpi.*.value": [
+            "The kpi.0.value field is required."
+        ]
+    }
+}
